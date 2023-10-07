@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
-import { faTrash,faEye } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import sendData from '../SendData'
 import { useContext } from 'react'
@@ -9,41 +9,48 @@ import { useEffect } from 'react'
 
 function AdminBody() {
 
-    const inputData = useContext(sendData);
+  const { fullInputs, imglinks } = useContext(sendData);
 
-
-
-    
+  const [imag , setImag] = useState([])
 
     const [data , setData] = useState([
         
     ])
 
     useEffect (()=>{
-        setData(inputData)
+        setData(fullInputs)
 
-    },[inputData])
+    },[fullInputs]) 
 
+    useEffect(()=>{
+      setImag(imglinks)
+    },[imglinks])
 
-    const deleteRowTabel = (idDeleterow) => {
+     const deleteRowTabel = (idDeleterow) => {
 
          const updatedata = data.filter((item,index)=>{ return index !== idDeleterow
         })
 
+        const updatedataImg = imag.filter((imggg,index)=>{
+          return index !== idDeleterow
+        })
+
         setData(updatedata)
-
         
+        setImag(updatedataImg)
 
-        
+    } 
 
-    }
-
-
-   
+    /* const see = () => {
+      imglinks.map((va,index)=>{
+        console.log(index,va)
+      })
+    } */
 
   return (
     <div className='adminBody' id='adminBody'>
-        <table id='admintabel'>
+{/*       <button onClick={see}>click here</button>
+ */}         <table id='admintabel'>
             
            <thead>
            <tr>
@@ -57,13 +64,22 @@ function AdminBody() {
            </thead>
             <tbody>
             {data.map((row,index) => (
+              
             <tr key={index}>
               <td>{row.ProductNo}</td>
               <td>{row.productName}</td>
               <td>{row.productPrice}</td>
               <td>{row.productQuantity}</td>
               <td>{row.AddDate}</td>
-              <td id='tabeleye'><FontAwesomeIcon icon={faEye}/></td>
+              {imag.map((imge,imgindex)=>{
+                if(imgindex === index){
+                 return( <td key={imgindex} id='tabeleye'><img id='productIMG' src={imge} alt="" /></td>)
+                }
+                else{
+                  return null
+                }
+              }                
+              )}
               <td id='tableEdit'><FontAwesomeIcon icon={faEdit}/></td>
               <td id='tabletrash'><FontAwesomeIcon icon={faTrash} onClick={()=>{deleteRowTabel(index)}}/></td>
             </tr>
@@ -73,8 +89,7 @@ function AdminBody() {
             
             </tbody>
             
-        </table>
-
+        </table> 
     </div>
   )
 }

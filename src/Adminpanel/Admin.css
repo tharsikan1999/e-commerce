@@ -276,9 +276,18 @@ margin-left: -3px;
 
 #addproduct-span-0 {
     font-weight: 600;
-    margin-left: 45px;
+    margin-left: 30px;
 }
 
+#productIMG {
+    
+
+    height: 100px;
+    width: 100px;
+}
+#productIMG:hover {
+    scale: 3;
+}
 /* adminBody */
 
 
@@ -315,6 +324,8 @@ margin-left: -3px;
     font-size: 20px;
     color: #8063f4d0;
     cursor: pointer;
+    background-color: #fff;
+    border: none;
 }
 
 #tabletrash {
@@ -322,21 +333,33 @@ margin-left: -3px;
     font-size: 20px;
     color: rgba(244, 61, 61, 0.971);
     cursor: pointer;
+    background-color: #fff;
+    border: none;
 }
 
 #tabeleye {
     font-size: 18px;
     color: #6f7cef;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #fff;
+    border: 3px solid #c19dd641;
+
+    
+    
 }
 
 #tabeleye:hover {
-    font-size: 24px;
-    transition: font-size 0.5s;
+    
+    background-color: #fff;
+    
 }
 
 #tabletrash:hover,#tableEdit:hover {
-    font-size: 26px;
+    font-size: 30px;
     transition: font-size 0.5s;
 }
 
