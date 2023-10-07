@@ -136,6 +136,7 @@
     color: #000000e4;
     display: none;
     top: 30px;
+    z-index: 999;
 }
 
 #faclose {
@@ -194,6 +195,20 @@
     bottom: 38px;
     position: absolute;
 }
+
+#ProductNo {
+    height: 38px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #8063f48d;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
 
 #Submit:hover {
     font-size: 1.3em;
@@ -257,6 +272,11 @@ margin-left: -3px;
 #addproduct-span-5 {
     font-weight: 600;
     margin-left: 15px;
+}
+
+#addproduct-span-0 {
+    font-weight: 600;
+    margin-left: 45px;
 }
 
 /* adminBody */
