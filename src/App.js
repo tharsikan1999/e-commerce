@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import sendData from './SendData';
-import Home from './Userpanel/Home';
+import AppUser from './Userpanel/AppUser';
 
 
 
@@ -107,7 +107,7 @@ function App() {
 
     </div>
     <sendData.Provider value={{fullInputs,imglinks}}>
-    <Home/>
+    <AppUser/>
     {/* <Admin/>  */}
     </sendData.Provider>
     

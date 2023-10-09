@@ -12,7 +12,7 @@
 
 .mainbox {
     width: 100%;
-    height: 90px;
+    height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,17 +73,15 @@
 }
 
 .navbar-center-box #fasearch {
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     margin-left: 10px;
     font-weight: 600;
 }
 
 .navbar-center-box #fasearch:hover {
-    rotate: 360deg;
     scale: 1.3;
     transition:  scale 0.7s;
-    transition:  rotate 0.7s;
 }
 
 
@@ -148,6 +146,19 @@
     margin: 0 20px;
 }
 
+#Popular,#Bestdeals,#Featured,#Newarivals,#Allproducts {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 560;
+    
+}
+
+#Popular:hover,#Bestdeals:hover,#Featured:hover,#Newarivals:hover,#Allproducts:hover {
+    border-bottom: 4px solid red;
+    color: rgba(0, 0, 0, 0.68);
+}
+
 
 /* No Page */
 
@@ -164,4 +175,8 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.sample-content-box {
+    height: 50vh;
 }

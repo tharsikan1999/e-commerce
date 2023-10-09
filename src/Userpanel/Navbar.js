@@ -3,7 +3,7 @@ import logo  from './images/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch,faUser,faCartPlus,faHeart } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
-import { Link } from 'react-router-dom'
+import { Link,Outlet } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -28,16 +28,17 @@ function Navbar() {
         </div>
         </div>
         <div className="sub-box-two">
-        <ul>
-                <li><Link to='/Popular'>🔥 Popular</Link></li>
-                 <li><Link to='/Bestdeals'>👍 Best deals</Link></li>
-                <li><Link to='/Featured'>⭐ Featured</Link></li>
-                <li><Link to='/Newarivals'>⏱️ New arrivals</Link></li>
-                <li><Link to='/Allproducts'>😍 All products</Link></li> 
-
-                
+            <ul>
+                <li><Link id='Popular'  to='/Popular'>🔥 Popular</Link></li>
+                 <li><Link id='Bestdeals' to='/Bestdeals'>👍 Best deals</Link></li>
+                <li><Link id='Featured' to='/Featured'>⭐ Featured</Link></li>
+                <li><Link id='Newarivals' to='/Newarivals'>⏱️ New arrivals</Link></li>
+                <li><Link id='Allproducts' to='/Allproducts'>😍 All products</Link></li> 
+                       
             </ul>
         </div>
+        <Outlet/>
+       
     </div>
   )
 }
