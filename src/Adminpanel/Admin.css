@@ -83,7 +83,7 @@
 
 .mainbox-dropdown {
     width: 150px;
-    height: 200px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -93,12 +93,12 @@
     border: 2px solid rgba(0, 0, 0, 0.082);
     position: absolute;
     right: 10px;
-    display: none;
     z-index: 999;
+    display: none;
 
 }
 
-.dropdownbox-box1,.dropdownbox-box2,.dropdownbox-box3 {
+.dropdownbox-box1,.dropdownbox-box3 {
     width: 120px;
     height: 40px;
     display: flex;
@@ -112,7 +112,7 @@
     
 }
 
-.dropdownbox-box1:hover,.dropdownbox-box2:hover,.dropdownbox-box3:hover {
+.dropdownbox-box1:hover,.dropdownbox-box3:hover {
     font-size: 18px;
     color: #1e1d1d97;
 }
@@ -290,6 +290,9 @@ margin-left: -3px;
 }
 /* adminBody */
 
+#Link-dropdownbox-box3 {
+    text-decoration: none;
+}
 
 .adminBody {
     height: 90vh;
@@ -297,7 +300,7 @@ margin-left: -3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 ;
+    padding: 30px 0 ;
 }
 
 

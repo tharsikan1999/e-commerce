@@ -4,8 +4,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch,faUser,faCartPlus,faHeart } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
 import { Link,Outlet } from 'react-router-dom'
+import { useEffect } from 'react'
+import DropDownuser from './DropDownuser'
 
 function Navbar() {
+
+     const showDropDownBar = () =>{
+         const DropDownBar = document.getElementById('umainbox-dropdown');
+
+         if(DropDownBar.style.display === "flex"){
+            DropDownBar.style.display = "none"
+         }
+         else{
+            DropDownBar.style.display = "flex"
+         }
+
+         
+    }
+
+    
+
+    useEffect(()=>{
+        const showDropdownBar = document.getElementById('fauser')
+
+        showDropdownBar.addEventListener("click",showDropDownBar)
+        
+    }) 
+
+
   return (
     <div className="mainbox">
         <div className="sub-box-one">
@@ -38,7 +64,7 @@ function Navbar() {
             </ul>
         </div>
         <Outlet/>
-       
+       <DropDownuser/>
     </div>
   )
 }

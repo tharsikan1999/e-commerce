@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser,faSignOut,faServer} from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 
 
@@ -11,14 +12,12 @@ export default function DropDownBox(){
             <FontAwesomeIcon icon={faUser} />
             <div className="DropDownBox-Profile"><p>Profile</p></div>
             </div>
-            <div className="dropdownbox-box2">
-            <FontAwesomeIcon icon={faServer} />
-            <div className="DropDownBox-Admin-Panel"><p>Panel</p></div>
-            </div>
+            <Link id="Link-dropdownbox-box3" to='/'>
             <div className="dropdownbox-box3">
             <FontAwesomeIcon icon={faSignOut} />
             <div className="DropDownBox-Logout"><p>Logout</p></div>
             </div>
+            </Link>
             
             
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import logo from './Images/logo.svg'
 import man from './Images/man.png'
-
+import { Link } from "react-router-dom";
 
 
 export default function Navbar(){
@@ -67,7 +67,10 @@ export default function Navbar(){
     return(
         <div className="admin-navbar-MainBox">
             <div className="navbar-LeftBox" >
+                <Link to='/'>
                 <img className="logo" src={logo} alt="logo" />
+                </Link>
+                
                 
             </div>
             <div className="admin-center-box">

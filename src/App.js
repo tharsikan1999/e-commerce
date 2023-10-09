@@ -108,7 +108,6 @@ function App() {
     </div>
     <sendData.Provider value={{fullInputs,imglinks}}>
     <AppUser/>
-    {/* <Admin/>  */}
     </sendData.Provider>
     
     </div>

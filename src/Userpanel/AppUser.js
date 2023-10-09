@@ -8,6 +8,7 @@ import Newarivals from './Newarivals'
 import Featured from './Featured'
 import Nopage from './Nopage'
 import Home from './Home'
+import Admin from '../Adminpanel/Admin'
 
 
 
@@ -24,7 +25,9 @@ function AppUser() {
           <Route path='/Newarivals' element={<Newarivals />} />
           <Route path='/Bestdeals' element={<Bestdeals />} />
           <Route path='/Featured' element={<Featured />} />       
-          <Route path='*' element={<Nopage />} />          
+          <Route path='*' element={<Nopage />} /> 
+          <Route path='/Adminpanel/Admin' element={<Admin />} /> 
+
       </Routes>
       
     </BrowserRouter>
