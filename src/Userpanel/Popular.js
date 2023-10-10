@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from '../Footer'
+import Signup from '../Signup'
 
 
 function Popular() {
   return (
     <div>
       <Navbar/>
-      <h1>Popular</h1>
+      <Signup/>
       <div className="sample-content-box">
         
       </div>

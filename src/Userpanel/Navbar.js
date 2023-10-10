@@ -18,16 +18,28 @@ function Navbar() {
          else{
             DropDownBar.style.display = "flex"
          }
-
          
     }
 
-    
+    const showLoginPage = () =>{
+        const mainloginBox = document.getElementById('main-box-login');
+
+        mainloginBox.style.display = 'flex'
+        
+
+    }
+
 
     useEffect(()=>{
         const showDropdownBar = document.getElementById('fauser')
 
-        showDropdownBar.addEventListener("click",showDropDownBar)
+        showDropdownBar.addEventListener("click",showDropDownBar);
+
+        const usrProfile = document.getElementById('udropdownbox-box1');
+
+        usrProfile.addEventListener("click",showLoginPage)
+
+        
         
     }) 
 

@@ -106,15 +106,19 @@
     align-items: center;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #f1ea5dd8;
+    background-color: #7f19e6;
     font-size: 15px;
     transition:font-size 0.5s ;
+    color: #f5f8fa;
     
 }
 
 .dropdownbox-box1:hover,.dropdownbox-box3:hover {
     font-size: 18px;
-    color: #1e1d1d97;
+    color: #7f19e6;
+    background-color: #f5f8fa;
+    transition:background-color 0.5s ;
+    border: 1.5px solid #7f19e6;
 }
 
 
