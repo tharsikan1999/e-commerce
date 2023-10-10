@@ -14,7 +14,7 @@ export default function Admin(){
             <Navbar/>
             <DropDownBox/>
             <AdminBody/>
-            <Footer/>
+           <Footer/>
         </div>
     )
 }

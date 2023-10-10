@@ -6,18 +6,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
-    
-
-    const showDropdwon = () => {
+    const handleUserIconMouseEnter = () => {
         let dropdownBox = document.getElementById('mainbox-dropdown');
-        if(dropdownBox.style.display === "flex"){
-            dropdownBox.style.display = "none"
-        }
-        else{
-            dropdownBox.style.display = "flex"
-        }
-        
-    }
+        dropdownBox.style.display = "flex"
+
+      };
 
     const showAddProduct = () => {
         let showProductBox = document.getElementById('mainbox-addproduct');
@@ -27,8 +20,7 @@ export default function Navbar(){
         let adminTable = document.getElementById('adminBody');
 
              adminTable.style.opacity = 0.4
-        
-        
+               
     }
 
     const hideAddProduct = () => {
@@ -43,8 +35,7 @@ export default function Navbar(){
     }
 
     useEffect(()=>{
-        const userLogo = document.getElementById('user-logo');
-        userLogo.addEventListener("click",showDropdwon);
+        
 
         const addProduct = document.getElementById('addItemButton');
 
@@ -53,12 +44,7 @@ export default function Navbar(){
         let closeButton = document.getElementById('faclose');
         
         closeButton.addEventListener('click',hideAddProduct);
-
         
-
-        return ()=>{
-            userLogo.removeEventListener("click",showDropdwon)
-        }
     },[]);
 
 
@@ -68,7 +54,7 @@ export default function Navbar(){
         <div className="admin-navbar-MainBox">
             <div className="navbar-LeftBox" >
                 <Link to='/'>
-                <img className="logo" src={logo} alt="logo" />
+                <img className="logo" onClick={hideAddProduct} src={logo} alt="logo" />
                 </Link>
                 
                 
@@ -77,7 +63,7 @@ export default function Navbar(){
                 <button id="addItemButton">Add Item</button>
             </div>
             <div className="admin-Navbar-RightBox">
-                <img className="user-logo" id="user-logo"  src={man} alt="user logo" />
+                <img className="user-logo" id="user-logo" onClick={handleUserIconMouseEnter} onMouseEnter={handleUserIconMouseEnter} src={man} alt="user logo" />
             </div>
 
         </div>

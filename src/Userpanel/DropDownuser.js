@@ -7,8 +7,20 @@ import { Link } from 'react-router-dom';
 
 
 function DropDownuser() {
+  const handleUserIconMouseEnter = () => {
+    const DropDownBar = document.getElementById('umainbox-dropdown');
+
+       DropDownBar.style.display = "flex"
+  };
+  const handleUserIconMouseLeave = () => {
+
+    const DropDownBar = document.getElementById('umainbox-dropdown');
+
+       DropDownBar.style.display = "none"
+  };
+
   return (
-    <div className="umainbox-dropdown" id="umainbox-dropdown">
+    <div className="umainbox-dropdown" id="umainbox-dropdown" onMouseEnter={handleUserIconMouseEnter} onMouseLeave={handleUserIconMouseLeave} >
             <div className="udropdownbox-box1" id='udropdownbox-box1'>
             <FontAwesomeIcon icon={faUser} />
             <div className="uDropDownBox-Profile"><p>Profile</p></div>

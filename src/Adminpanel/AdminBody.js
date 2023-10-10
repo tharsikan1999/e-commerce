@@ -9,6 +9,13 @@ import { useEffect } from 'react'
 
 function AdminBody() {
 
+  const handleUserIconMouseLeave = () => {
+
+    const DropDownBar = document.getElementById('mainbox-dropdown');
+
+       DropDownBar.style.display = "none"
+  };
+  
   const { fullInputs, imglinks } = useContext(sendData);
 
   const [imag , setImag] = useState([])
@@ -41,16 +48,11 @@ function AdminBody() {
 
     } 
 
-    /* const see = () => {
-      imglinks.map((va,index)=>{
-        console.log(index,va)
-      })
-    } */
+   
 
   return (
-    <div className='adminBody' id='adminBody'>
-{/*       <button onClick={see}>click here</button>
- */}         <table id='admintabel'>
+    <div className='adminBody' id='adminBody' onMouseEnter={handleUserIconMouseLeave}>
+        <table id='admintabel'>
             
            <thead>
            <tr>

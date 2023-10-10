@@ -9,17 +9,24 @@ import DropDownuser from './DropDownuser'
 
 function Navbar() {
 
-     const showDropDownBar = () =>{
-         const DropDownBar = document.getElementById('umainbox-dropdown');
+    
 
-         if(DropDownBar.style.display === "flex"){
-            DropDownBar.style.display = "none"
-         }
-         else{
-            DropDownBar.style.display = "flex"
-         }
-         
-    }
+  
+
+  const handleUserIconMouseEnter = () => {
+    const DropDownBar = document.getElementById('umainbox-dropdown');
+
+       DropDownBar.style.display = "flex"
+  };
+  const handleUserIconMouseLeave = () => {
+
+    const DropDownBar = document.getElementById('umainbox-dropdown');
+
+       DropDownBar.style.display = "none"
+  };
+
+
+  
 
     const showLoginPage = () =>{
         const mainloginBox = document.getElementById('main-box-login');
@@ -31,9 +38,7 @@ function Navbar() {
 
 
     useEffect(()=>{
-        const showDropdownBar = document.getElementById('fauser')
 
-        showDropdownBar.addEventListener("click",showDropDownBar);
 
         const usrProfile = document.getElementById('udropdownbox-box1');
 
@@ -41,7 +46,9 @@ function Navbar() {
 
         
         
-    }) 
+    },[]) 
+
+    
 
 
   return (
@@ -57,15 +64,15 @@ function Navbar() {
             <FontAwesomeIcon id='fasearch' icon={faSearch}/>
 
         </div>
-        <div className="navbar-left-box">
+        <div className="navbar-left-box" >
             <FontAwesomeIcon id='facartplus' icon={faCartPlus}/>
             
             <FontAwesomeIcon id='faheart' icon={faHeart}/>
-            <FontAwesomeIcon id='fauser' icon={faUser}/>
+            <FontAwesomeIcon id='fauser' onClick={handleUserIconMouseEnter}  onMouseEnter={handleUserIconMouseEnter} icon={faUser}/>
 
         </div>
         </div>
-        <div className="sub-box-two">
+        <div className="sub-box-two" onMouseEnter={handleUserIconMouseLeave}>
             <ul>
                 <li><Link id='Popular'  to='/Popular'>🔥 Popular</Link></li>
                  <li><Link id='Bestdeals' to='/Bestdeals'>👍 Best deals</Link></li>
