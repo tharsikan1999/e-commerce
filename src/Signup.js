@@ -102,7 +102,7 @@ function Signup() {
           <p>Github</p>
         </div>
       </div>
-      <h4 id='Login-your-account'>Login your account</h4>
+      <h4 id='Signup-your-account'>Login your account</h4>
       </div>
     </div>
   )

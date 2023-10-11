@@ -1,15 +1,21 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from '../Footer'
+import Signup from '../Signup'
+import Items from './Items'
+import Promition from './Promition'
+import Login from '../Login'
+
+
 
 function Featured() {
   return (
     <div>
       <Navbar/>
-      <h1>Featured</h1>
-      <div className="sample-content-box">
-        
-      </div>
+      <Login/>
+      <Signup/>
+      <Items/>
+      <Promition/>
       <Footer/>
     </div>
   )

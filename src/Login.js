@@ -52,7 +52,7 @@ function Login() {
 
       registerp.addEventListener("click",showSignUp)
 
-      const loginacoount = document.getElementById('Login-your-account');
+      const loginacoount = document.getElementById('Signup-your-account');
 
       loginacoount.addEventListener("click",showsign)
     

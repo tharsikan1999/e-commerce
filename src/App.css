@@ -10,12 +10,15 @@
 
 .main-box-login {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     display: none;
-    background: #ffffff;
+    background: #ffffffad;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
     
 }
 
@@ -201,19 +204,21 @@
 
 .main-box-Signup {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #ffffff;
+    background: #ffffffad;
     display: none;
-    
+    overflow: hidden;
+    z-index: 999;
+    position: absolute;
 }
 
 .sub-box-social-Signup {
     box-shadow:1px 1px 3px 2.5px #5E5DF0;
     width: 400px;
-    height: 600px; 
+    height: 520px; 
     padding:  0 0 0 30px;
     background-color: #fff;
     
@@ -233,7 +238,7 @@
 
 .logo-for-social-Signup {
     height: 50px;
-    margin: 30px 0;
+    margin: 10px 0 20px 0;
 }
 
 .main-box-Signup #emailaddress {
@@ -374,13 +379,13 @@
     
 }
 
-#Login-your-account {
-    margin: 25px 0 30px 70px;
+#Signup-your-account {
+    margin: 25px 0 30px 85px;
     font-weight: 600;
     font-size: 17px;
 }
 
-#Login-your-account:hover {
+#Signup-your-account:hover {
 
     cursor: pointer;
     color: rgba(0, 0, 0, 0.611);

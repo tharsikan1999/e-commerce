@@ -1,15 +1,19 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from '../Footer'
+import Items from './Items'
+import Promition from './Promition'
+import Login from '../Login'
+import Signup from '../Signup'
 
 function Newarivals() {
   return (
     <div>
       <Navbar/>
-      <h1>Newarivals</h1>
-      <div className="sample-content-box">
-        
-      </div>
+      <Login/>
+      <Signup/>
+      <Items/>
+      <Promition/>
       <Footer/>
     </div>
   )
