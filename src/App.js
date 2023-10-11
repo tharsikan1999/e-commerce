@@ -40,8 +40,6 @@ function App() {
   const sumbitValues = (e) => {
   e.preventDefault();
 
-  
-
   setFullinputs([...fullInputs,inputs])
 
   setInputs(
@@ -52,8 +50,7 @@ function App() {
       productPrice : "",
       AddDate : "",
       productQuantity : "",
-      
-    
+        
     }
   )
 

@@ -186,7 +186,7 @@
 /* dropdown navbar */
 
 .umainbox-dropdown {
-    width: 150px;
+    width: 130px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -204,8 +204,8 @@
 }
 
 .udropdownbox-box1,.udropdownbox-box2,.udropdownbox-box3 {
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -219,7 +219,7 @@
 }
 
 .udropdownbox-box1:hover,.udropdownbox-box2:hover,.udropdownbox-box3:hover {
-    font-size: 18px;
+    font-size: 16px;
     color: #7f19e6;
     background-color: #f5f8fa;
     transition:background-color 0.5s ;

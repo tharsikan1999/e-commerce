@@ -82,8 +82,8 @@
 /* dropdown navbar */
 
 .mainbox-dropdown {
-    width: 150px;
-    height: 140px;
+    width: 110px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -99,8 +99,8 @@
 }
 
 .dropdownbox-box1,.dropdownbox-box3 {
-    width: 120px;
-    height: 40px;
+    width: 90px;
+    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -114,7 +114,7 @@
 }
 
 .dropdownbox-box1:hover,.dropdownbox-box3:hover {
-    font-size: 18px;
+    font-size: 16px;
     color: #7f19e6;
     background-color: #f5f8fa;
     transition:background-color 0.5s ;

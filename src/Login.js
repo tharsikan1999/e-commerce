@@ -6,15 +6,7 @@ import google from './Userpanel/images/google.png'
 import logo from './Adminpanel/Images/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClose } from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from 'react'
-
-
-
-
-
-
-  
-
+import { useEffect,useState } from 'react'
 
 
 
@@ -66,6 +58,44 @@ function Login() {
     
     })
 
+    const [singData ,setSignData] = useState({
+      emailaddress : '',
+      Passwords : '',
+    });
+
+
+    const submitdetaials = (e) => {
+
+      e.preventDefault();
+
+      setSignData(
+        {
+          emailaddress : '',
+          Passwords : '',
+        }
+      )
+
+      console.log(singData)
+
+    }
+
+
+    const getDetailsUser = (e) => {
+
+      const name = e.target.name;
+
+      const values = e.target.value;
+
+      setSignData(()=>{
+        return{
+          ...singData,[name]:values
+        }
+      })
+      
+    }
+
+
+
   return (
     <div className='main-box-login'
     id='main-box-login'>
@@ -75,9 +105,15 @@ function Login() {
       <h4 className='Login-to '>Login to account</h4> 
       <FontAwesomeIcon id='login-faclose' icon={faClose}/> 
       </div>
-      <input id='e-mail-address' type="text" placeholder='E-mail Address' /> <br />
-      <input id='Passwords' type="text" placeholder='Password' /> <br />
-      <button id='login-button' type='submit'>Login</button> <span>Forgot Password?</span>
+      <form action="" onSubmit={submitdetaials}>
+      <input required name='emailaddress' id='emailaddress' type="email" placeholder='E-mail Address' value={singData.email} onChange={(e)=>{
+        getDetailsUser(e)
+      }} /> <br />
+      <input required name='Passwords' id='Passwords' type="password" placeholder='Password' value={singData.Passwords} onChange={(e)=>{
+        getDetailsUser(e)
+      }} /> <br />
+      <button name='loginbutton' id='loginbutton' type='submit'>Login</button> <span>Forgot Password?</span>
+      </form> 
       <p id='paragraph-login'>Or Login With</p>
       <div className="social-login-box">
         <div className="facebook-login">
