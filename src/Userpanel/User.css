@@ -211,7 +211,7 @@
     align-items: center;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #7f19e6;
+    background-color: #8019e6e5;
     font-size: 15px;
     transition:font-size 0.5s ;
     color: #f5f8fa;
@@ -220,14 +220,90 @@
 
 .udropdownbox-box1:hover,.udropdownbox-box2:hover,.udropdownbox-box3:hover {
     font-size: 16px;
-    color: #7f19e6;
+    color: #8019e6e5;
     background-color: #f5f8fa;
     transition:background-color 0.5s ;
-    border: 1.5px solid #7f19e6;
+    border: 1.5px solid #8019e6e4;
 
 }
 
 
 #Link-udropdownbox-box2,#Link-udropdownbox-box3 {
     text-decoration: none;
+}
+
+
+
+/*   promitons */
+
+
+.promotion-main-box {
+}
+
+.box-one-promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-one-promotion img {
+    height: 50px;
+}
+
+.box-two-promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #414142;
+    margin: 20px;
+}
+
+.box-three-promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 70px 0;
+}
+
+.box-three-promotion input {
+    height: 40px;
+    width: 370px;
+    margin: 0 10px;
+    padding: 0 0 0 10px;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid #8019e6e5;
+    border-radius: 10px;
+}
+
+.box-three-promotion button {
+
+    height: 40px;
+    width: 140px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    background: #8019e6e5;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.box-three-promotion button:hover {
+    color: #8019e6e5;
+    border: 2px solid #8019e6e5 ;
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+.box-one-promotion img {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.box-one-promotion img:hover {
+    scale: 1.3;
+    transition: scale 0.5s;
 }

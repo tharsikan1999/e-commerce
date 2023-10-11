@@ -106,7 +106,7 @@
     align-items: center;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #7f19e6;
+    background-color: #8019e6e5;
     font-size: 15px;
     transition:font-size 0.5s ;
     color: #f5f8fa;
@@ -115,10 +115,10 @@
 
 .dropdownbox-box1:hover,.dropdownbox-box3:hover {
     font-size: 16px;
-    color: #7f19e6;
+    color: #8019e6e5;
     background-color: #f5f8fa;
     transition:background-color 0.5s ;
-    border: 1.5px solid #7f19e6;
+    border: 1.5px solid #8019e6e5;
 }
 
 
