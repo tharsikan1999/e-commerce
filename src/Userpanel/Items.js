@@ -134,22 +134,25 @@ function Items() {
 
     const [hoveredItem, setHoveredItem] = useState(null);
 
+    const [heartItem,setHeratItem] = useState(false);
+
     const showHeart = (index) => {
         setHoveredItem(index);
     };
 
     const hideHeart = () => {
         setHoveredItem(null);
+    
     };
 
     const scaleHeart = () => {
-     const heart =  document.getElementById('faHeart');
-     heart.style.fontSize = "30px";
-        console.log("first")
+        setHeratItem(true)
+
+     
     }
 
     const unsccaleHeart = () => {
-        document.getElementById('faHeart').style.scale = 1;
+        setHeratItem(false)
     }
 
 
@@ -161,8 +164,10 @@ function Items() {
          (<div className="item-box" key={index} onMouseEnter={()=>{
             showHeart(index)
          }} onMouseLeave={hideHeart} >
-         <div className="item-heart" id='item-heart' style={{display : hoveredItem=== index ? 'flex':'none'}} onMouseEnter={scaleHeart} onMouseLeave={unsccaleHeart} >
-             <FontAwesomeIcon id='faHeart' icon={faHeart}/>
+         <div className="item-heart" id='item-heart' style={{display : hoveredItem=== index ? 'flex':'none'}} onMouseEnter={()=>{
+            scaleHeart(index)
+         }} onMouseLeave={unsccaleHeart} >
+             <FontAwesomeIcon id='faHeart' style={{scale : heartItem === true ? '1.3' :'1'}} icon={faHeart}/>
          </div>
          <img id='product-img' src={details.productIMG} alt="" />
          <h5>{details.productPrice}</h5>

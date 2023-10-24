@@ -354,6 +354,7 @@
     height: 260px;
     width: 240px;
     overflow: hidden;
+    
 }
 
 
@@ -361,6 +362,7 @@
     scale: 1.3;
     transition: scale 0.7s ease;
     overflow: hidden;
+    
 }
 #review-star {
     height: 18px;
@@ -408,6 +410,7 @@
     transition: color 0.1s;
     transition: background-color 0.1s;
     display: none;
+    position: absolute;
     
 }
 
@@ -428,4 +431,235 @@
 #faHeart:hover {
     transition: scale 0.7s;
     scale: 1.2;
+}
+
+
+
+/* product css */
+
+.main-box-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.main-box-product .sub-box-product {
+    width: 70%;
+}
+
+.box-one-img-addcart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-one-img-addcart .clone-img {
+    margin: 10px 20px;
+}
+.box-one-img-addcart .main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} 
+.box-one-img-addcart .main-img img {
+    height: 550px;
+}
+
+.clone-img-one img,.clone-img-two img,.clone-img-three img,.clone-img-four img,.clone-img-five img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #4141421f;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img-addcart {
+    width: 350px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.img-addcart .product-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: inherit;
+    color: #414142;
+    margin: 20px 0 0 0;
+}
+
+.review-each-product  {
+    margin: 15px 0 0 0 ;
+    display: flex;
+    align-items: center;
+}
+
+.review-each-product p {
+    color: #4065e0d6;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.review-each-product .img-start img {
+    height: 15px;
+    margin: 3px  0 0 0;
+}
+
+.each-product-price {
+    margin:15px 0 0 0;
+    font-size: 30px;
+    color: #565656;
+}
+
+
+.img-addcart .free-shipping {
+    color: #4065e0d6;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px  0 0 0;
+}
+
+
+.selling-fast {
+    margin: 20px 0 0 0;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.771);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.selling-fast img {
+    height: 25px;
+
+}
+
+.selling-fast p {
+    font-size: 14px;
+    margin: 10px;
+    color: #fff;
+
+}
+
+.high-demand {
+    margin: 20px 0 0 0;
+    height: 40px;
+    background-color: #ffc10736;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.high-demand img {
+    height: 25px;
+
+}
+
+.high-demand p {
+    font-size: 14px;
+    margin: 10px;
+    color: #E21111;
+
+}
+
+
+.add-to-cart-button {
+    height: 55px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #f5f8fa;
+    background-color: #684aeff5;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #fff;
+    color: #684aeff5;
+    border: 1.5px solid #684aeff5;
+}
+
+.Material {
+    color: #4a4850f5;
+    margin: 15px 0 0 0;
+}
+
+
+.sub-box-img-set {
+    display: flex;
+}
+
+.verify-by-shoppers {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0692e321;
+    color: rgb(46, 183, 233);
+    
+}
+
+.verify-by-shoppers-box-one {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+    
+}
+
+.Verified {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 10px 0 10px;
+    
+}
+
+.faThumbsUp {
+    font-size: 23px;
+}
+
+.product-always {
+    margin:  0 0 10px 0;
+}
+
+.sub-box-two-product {
+    display: flex;
+    margin: 40px 0;
+}
+
+.left-box-sub-box-two-product {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.left-box-sub-box-two-product img {
+    height: 70px;
+    border-radius: 10px;
+    margin: 0 15px 0 0;
+    transition: all 0.5s;
+}
+
+.left-box-sub-box-two-product img:hover {
+    scale: 1.3;
+    cursor: pointer;
+}
+
+.heading-left-box-sub-box-two-product-paragraph {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+#heading-left-box-sub-box-two-product-paragraph {
+    font-size: 14px;
+    color: #414142;
+    margin: 5px 0;
 }
