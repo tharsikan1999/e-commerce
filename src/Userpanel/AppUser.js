@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Popular from './Popular'
 import Bestdeals from './Bestdeals'
@@ -9,30 +9,33 @@ import Featured from './Featured'
 import Nopage from './Nopage'
 import Home from './Home'
 import Admin from '../Adminpanel/Admin'
+import Navbar from './Navbar'
+import Promition from './Promition'
+import Footer from '../Footer'
+import { useState } from 'react'
 
 
 
 function AppUser() {
+
+  const [showNvaebar,setShowNavbar] = useState(true);
   return (
     <div className='home-main-box'>
-      
     <BrowserRouter>
+    {showNvaebar && <Navbar/>}
       <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/Navbar' element={<Navbar />}/>
           <Route path='/Popular' element={<Popular />} />
           <Route path='/Allproducts' element={<Allproducts />} />
           <Route path='/Newarivals' element={<Newarivals />} />
           <Route path='/Bestdeals' element={<Bestdeals />} />
-          <Route path='/Featured' element={<Featured />} />       
+          <Route path='/Featured'  element={<Featured />} />       
           <Route path='*' element={<Nopage />} /> 
-          <Route path='/Adminpanel/Admin' element={<Admin />} /> 
-
+          <Route path='/Adminpanel/Admin' element={ <Admin setShowNavbar={setShowNavbar}/>}/> 
       </Routes>
-      
-    </BrowserRouter>
-    
-    
+      {showNvaebar && <Promition/>}
+      <Footer/>   
+    </BrowserRouter>    
   </div>
 )
 }

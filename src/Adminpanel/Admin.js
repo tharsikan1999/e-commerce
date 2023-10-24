@@ -1,20 +1,26 @@
 import React from "react";
 import "./Admin.css"
-import Navbar from "./Navbar";
 import DropDownBox from "./dropDownBox";
 import AdminBody from "./AdminBody";
-import Footer from "../Footer";
+import { useEffect } from "react";
+import Navbar from "./Navbar";
 
 
 
 
-export default function Admin(){
+export default function Admin({setShowNavbar}){
+    useEffect(() => {
+        setShowNavbar(false); 
+    
+        return () => {
+          setShowNavbar(true);
+        };
+      }, [setShowNavbar]);
     return(
-        <div className="admin-Main-Bbox">
-            <Navbar/>
+        <div className="admin-Main-Bbox"> 
+        <Navbar/>  
             <DropDownBox/>
-            <AdminBody/>
-           <Footer/>
+            <AdminBody/>  
         </div>
     )
 }

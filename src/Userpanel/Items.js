@@ -1,10 +1,11 @@
 import React from 'react'
-import imgone from './images/products/imgone.jpg'
 import star from './images/star.png'
 import './User.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 
-import belt from './images/products/belt.jpg'
+import belt from './images/products/belt.jpg';
 import clothesone from './images/products/clothes-1.jpg'
 import clothestwo from './images/products/clothes-2.jpg'
 import two from './images/products/2.jpg'
@@ -25,307 +26,164 @@ import clothesfourten from './images/products/party-wear-2.jpg'
 import clothesfoureleven from './images/products/watch-2.jpg'
 import clothesfourtwel from './images/products/jewellery-3.jpg'
 
-
-
-
+import { useState } from 'react'
 
 function Items() {
+    const itemsData = [{
+        ProductName: "belt",
+        productIMG: clothesone, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothestwo, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: two, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: three, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesthree, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfour, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourone      , 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourtwo, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourthree, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourfour, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourfive, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfoursix, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },
+    {
+        ProductName: "belt",
+        productIMG: belt, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourseven, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfoureight  , 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfournine, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourten, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfoureleven, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: clothesfourtwel, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    },{
+        ProductName: "belt",
+        productIMG: four, 
+        productPrice: '$10.00 - $15.00',
+        productBought: "1434",
+    }];
+
+    const [hoveredItem, setHoveredItem] = useState(null);
+
+    const showHeart = (index) => {
+        setHoveredItem(index);
+    };
+
+    const hideHeart = () => {
+        setHoveredItem(null);
+    };
+
+    const scaleHeart = () => {
+     const heart =  document.getElementById('faHeart');
+     heart.style.fontSize = "30px";
+        console.log("first")
+    }
+
+    const unsccaleHeart = () => {
+        document.getElementById('faHeart').style.scale = 1;
+    }
+
+
   return (
     <div className='main-box-items'>
-       <div className="sub-main-box-item">
-      
-        
-        <div className="item-box">
-            <img id='product-img' src={clothesone} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothestwo} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={two} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={three} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={four} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesthree} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfour} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfourone} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={belt} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfourtwo} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfourthree} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfourfour} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfourfive} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfoursix} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfourseven} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfoureight} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfournine} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div><div className="item-box">
-            <img id='product-img' src={clothesfourten} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfoureleven} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={clothesfourtwel} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-        <div className="item-box">
-            <img id='product-img' src={imgone} alt="" />
-            <h5>$10.00 - $15.00</h5>
-            <div className="sub-box-tem">
-                <p>1678 bought this</p>
-                <div className="review-star-box">
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                    <img id='review-star' src={star} alt="" />
-                </div>
-            </div>
-        </div>
-       </div>
-
+     <div className="sub-main-box-item">   
+     {
+        itemsData.map((details,index)=>
+         (<div className="item-box" key={index} onMouseEnter={()=>{
+            showHeart(index)
+         }} onMouseLeave={hideHeart} >
+         <div className="item-heart" id='item-heart' style={{display : hoveredItem=== index ? 'flex':'none'}} onMouseEnter={scaleHeart} onMouseLeave={unsccaleHeart} >
+             <FontAwesomeIcon id='faHeart' icon={faHeart}/>
+         </div>
+         <img id='product-img' src={details.productIMG} alt="" />
+         <h5>{details.productPrice}</h5>
+         <div className="sub-box-tem">
+             <p>{details.productBought}</p>
+             <div className="review-star-box">
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+             </div>
+         </div>
+      </div> )
+        )
+      }    
+    </div>
     </div>
   )
 }
 
 export default Items
+
+

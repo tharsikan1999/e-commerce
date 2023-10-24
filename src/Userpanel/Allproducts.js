@@ -1,21 +1,18 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from '../Footer'
 import Items from './Items'
-import Promition from './Promition'
 import Login from '../Login'
 import Signup from '../Signup'
-
+import Productpage from './Productpage'
 
 function Allproducts() {
   return (
     <div>
-      <Navbar/>
+     
+     <Productpage/>
       <Login/>
       <Signup/>
-      <Items/>
-      <Promition/>
-      <Footer/>
+      
+      
       
       </div>
   )

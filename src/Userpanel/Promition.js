@@ -13,6 +13,7 @@ function Promition() {
 
     const getFinalValue = (e) => {
         e.preventDefault()
+        setInputData(" ")
         console.log(inputData)
     }
         

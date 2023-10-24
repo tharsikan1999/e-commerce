@@ -64,7 +64,7 @@ function AdminBody() {
                 <th>Product image</th>
             </tr>
            </thead>
-            <tbody>
+            <tbody id='tabelBodyAdmin'>
             {data.map((row,index) => (
               
             <tr key={index}>
