@@ -14,7 +14,69 @@ import returnimg from './images/return.png'
 import safe from './images/safe.png'
 
 
+
 function Productpage() {
+
+
+  
+  const hideDiv = () => {
+    const spanOne = document.querySelector(".span-one");
+    const spanTwo = document.querySelector(".span-two");
+    const detailsBox = document.getElementById('deatils-about-product');
+
+    const isrotate = spanOne.style.rotate === '-45deg'
+
+    if(isrotate){
+      spanOne.style.rotate = '0deg';
+      spanTwo.style.rotate = '-90deg';
+      spanOne.style.transform = 'translate(128%,1%)';
+    spanOne.style.border= '2px solid #684aeff5'
+    spanTwo.style.border= '2px solid #684aeff5'
+    detailsBox.style.height = '0px'
+    detailsBox.style.overflow = 'none'
+    }
+    else{
+      spanOne.style.rotate = '-45deg';
+    spanTwo.style.rotate = '45deg';
+    spanOne.style.transform = 'translate(40%,10%)';
+    spanOne.style.border= '2px solid #ef584a'
+    spanTwo.style.border= '2px solid #ef584a'
+    detailsBox.style.height = '100%'
+    detailsBox.style.overflow = 'flex'
+    }    
+  }
+
+
+
+  const hideDiv1 = () => {
+    const spanOne = document.querySelector(".span-one");
+    const spanTwo = document.querySelector(".span-two");
+    const detailsBox = document.getElementById('deatils-about-product');
+
+    const isrotate = spanOne.style.rotate === '-45deg'
+
+    if(isrotate){
+      spanOne.style.rotate = '0deg';
+      spanTwo.style.rotate = '-90deg';
+      spanOne.style.transform = 'translate(128%,1%)';
+    spanOne.style.border= '2px solid #684aeff5'
+    spanTwo.style.border= '2px solid #684aeff5'
+    detailsBox.style.height = '0px'
+    detailsBox.style.overflow = 'none'
+    }
+    else{
+      spanOne.style.rotate = '-45deg';
+    spanTwo.style.rotate = '45deg';
+    spanOne.style.transform = 'translate(40%,10%)';
+    spanOne.style.border= '2px solid #ef584a'
+    spanTwo.style.border= '2px solid #ef584a'
+    detailsBox.style.height = '100%'
+    detailsBox.style.overflow = 'flex'
+    }    
+  }
+
+  
+
   return (
     <div className='main-box-product'>
       <div className="sub-box-product">
@@ -41,6 +103,7 @@ function Productpage() {
           <div className="main-img">
             <img src={two} alt="" />
           </div>
+          
           </div>
           <div className="verify-by-shoppers">
             <div className="verify-by-shoppers-box-one">
@@ -48,6 +111,46 @@ function Productpage() {
               <p className='Verified'> Verified by shoppers </p>
             </div>
             <p className='product-always'> Product always receives high satisfaction ratings from our customers </p>
+          </div>
+          <div className="prodcut-details">
+            <div className="h1-prodcut-details">
+              <h2>Product Details</h2>
+              <div className="faplus" onClick={hideDiv}>
+                <span className='span-one'></span>
+                <span className='span-two'></span>
+              </div> 
+            </div>
+            <div className="deatils-about-product" id='deatils-about-product'>
+                <ul>
+                  <li>Item Type: Phone Cases</li>
+                  <li>Material: TPU</li>
+                  <li>Compatibility: iPhone 6, 6 Plus, 6S, 6S Plus, 7, 7 Plus, 8, 8 Plus, X, XR, XS, XS Max</li>
+                </ul>
+                <p>Package Includes:</p>
+                <ul>
+                  <li>1 x Phone Case</li>
+                </ul>
+              </div>
+          </div>
+          <div className="prodcut-details">
+            <div className="h1-prodcut-details">
+              <h2>Item Specifics</h2>
+              <div className="faplus" onClick={hideDiv1}>
+                <span className='span-one'></span>
+                <span className='span-two'></span>
+              </div> 
+            </div>
+            <div className="deatils-about-product" id='deatils-about-product'>
+                <ul>
+                  <li>Item Type: Phone Cases</li>
+                  <li>Material: TPU</li>
+                  <li>Compatibility: iPhone 6, 6 Plus, 6S, 6S Plus, 7, 7 Plus, 8, 8 Plus, X, XR, XS, XS Max</li>
+                </ul>
+                <p>Package Includes:</p>
+                <ul>
+                  <li>1 x Phone Case</li>
+                </ul>
+              </div>
           </div>
          </div>
           <div className="right-box-product">
@@ -68,7 +171,20 @@ function Productpage() {
             <div className="selling-fast">
               <img src={clock} alt="" />
               <p> Selling fast: get yours before it’s gone!</p>
-              </div>
+            </div>
+            <div className='matirial-img-box'>
+              <span><img src={belt} alt="" /></span>
+              <span><img src={clothesone} alt="" /></span>
+              <span><img src={clothestwo} alt="" /></span>
+              <span><img src={two} alt="" /></span>
+              <span><img src={three} alt="" /></span>
+              <span><img src={belt} alt="" /></span>
+              <span><img src={clothesone} alt="" /></span>
+              <span><img src={clothestwo} alt="" /></span>
+              <span><img src={two} alt="" /></span>
+              <span><img src={three} alt="" /></span>
+
+            </div>
               <p className='Material'>Material</p>
 
               

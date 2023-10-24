@@ -663,3 +663,92 @@
     color: #414142;
     margin: 5px 0;
 }
+
+/* matrerial box */
+
+
+.matirial-img-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.matirial-img-box img {
+    height: 60px;
+    border: 1px solid #82828423;
+    
+}
+
+.matirial-img-box span {
+    margin: 5px;
+}
+
+.matirial-img-box span:hover {
+    cursor: pointer;
+    outline : 1px solid #414142;
+    padding: 2px;
+}
+
+
+.left-box-product .prodcut-details {
+    margin: 30px 0;
+    border-top: 1px solid #565656;
+    
+}
+
+.faplus {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.h1-prodcut-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 80px;
+    color: #565656;
+
+}
+
+.span-one {
+    border: 2px solid #684aeff5;
+    transform: translate(38%,1%);
+    transition: all 0.7s;
+}
+
+.span-two {
+    border: 2px solid #684aeff5;
+    rotate: 90deg;
+    transform: translate(10%,5%);
+    transition: all 0.7s;
+
+}
+
+.deatils-about-product {
+    
+    height: 0px;
+    overflow: hidden;
+   
+
+}
+.deatils-about-product ul {
+    margin: 30px 0 20px 50px;
+}
+
+.deatils-about-product ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #414142;
+}
+
+.deatils-about-product p {
+    margin: 30px 0 20px 22px;
+    font-weight: 550;
+    color: #414142;
+
+}
