@@ -1,5 +1,4 @@
 import './App.css';
-import Admin from './Adminpanel/Admin';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
@@ -57,6 +56,9 @@ function App() {
   setImageURL("")
 
   setImglinks([...imglinks,imageURL])
+
+
+
 
   }
 

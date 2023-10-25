@@ -30,7 +30,7 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import sendData from '../SendData'
 
-function Items() {
+function NewItems() {
 
     const productDatas = useContext(sendData);
 
@@ -165,31 +165,7 @@ function Items() {
   return (
     <div className='main-box-items'>
      <div className="sub-main-box-item">   
-     {
-        itemsData.map((details,index)=>
-         (<div className="item-box" key={index} onMouseEnter={()=>{
-            showHeart(index)
-         }} onMouseLeave={hideHeart} >
-         <div className="item-heart" id='item-heart' style={{display : hoveredItem=== index ? 'flex':'none'}} onMouseEnter={()=>{
-            scaleHeart(index)
-         }} onMouseLeave={unsccaleHeart} >
-             <FontAwesomeIcon id='faHeart' style={{scale : heartItem === true ? '1.3' :'1'}} icon={faHeart}/>
-         </div>
-         <img id='product-img' src={details.productIMG} alt="" />
-         <h5>{details.productPrice}</h5>
-         <div className="sub-box-tem">
-             <p>{details.productBought}</p>
-             <div className="review-star-box">
-                 <img id='review-star' src={star} alt="" />
-                 <img id='review-star' src={star} alt="" />
-                 <img id='review-star' src={star} alt="" />
-                 <img id='review-star' src={star} alt="" />
-                 <img id='review-star' src={star} alt="" />
-             </div>
-         </div>
-      </div> )
-        )
-      }  
+     
 
       {
         productDatas.fullInputs.map((details,index)=>
@@ -224,12 +200,37 @@ function Items() {
          </div>
       </div> )
         )
+      }  
+      {
+        itemsData.map((details,index)=>
+         (<div className="item-box" key={index} onMouseEnter={()=>{
+            showHeart(index)
+         }} onMouseLeave={hideHeart} >
+         <div className="item-heart" id='item-heart' style={{display : hoveredItem=== index ? 'flex':'none'}} onMouseEnter={()=>{
+            scaleHeart(index)
+         }} onMouseLeave={unsccaleHeart} >
+             <FontAwesomeIcon id='faHeart' style={{scale : heartItem === true ? '1.3' :'1'}} icon={faHeart}/>
+         </div>
+         <img id='product-img' src={details.productIMG} alt="" />
+         <h5>{details.productPrice}</h5>
+         <div className="sub-box-tem">
+             <p>{details.productBought}</p>
+             <div className="review-star-box">
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+                 <img id='review-star' src={star} alt="" />
+             </div>
+         </div>
+      </div> )
+        )
       }      
     </div>
     </div>
   )
 }
 
-export default Items
+export default NewItems
 
 
