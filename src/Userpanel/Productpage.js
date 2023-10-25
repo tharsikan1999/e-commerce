@@ -12,6 +12,7 @@ import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import plane from './images/plane.png';
 import returnimg from './images/return.png'
 import safe from './images/safe.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,6 +24,7 @@ function Productpage() {
     const spanOne = document.querySelector(".span-one");
     const spanTwo = document.querySelector(".span-two");
     const detailsBox = document.getElementById('deatils-about-product');
+    const prodcutdetails = document.querySelector('.h1-prodcut-details');
 
     const isrotate = spanOne.style.rotate === '-45deg'
 
@@ -34,6 +36,8 @@ function Productpage() {
     spanTwo.style.border= '2px solid #684aeff5'
     detailsBox.style.height = '0px'
     detailsBox.style.overflow = 'none'
+    prodcutdetails.style.background = '#fff'
+    
     }
     else{
       spanOne.style.rotate = '-45deg';
@@ -43,15 +47,18 @@ function Productpage() {
     spanTwo.style.border= '2px solid #ef584a'
     detailsBox.style.height = '100%'
     detailsBox.style.overflow = 'flex'
+    prodcutdetails.style.background = '#56565610'
+    prodcutdetails.style.background = '#56565610'
     }    
   }
 
 
 
   const hideDiv1 = () => {
-    const spanOne = document.querySelector(".span-one");
-    const spanTwo = document.querySelector(".span-two");
-    const detailsBox = document.getElementById('deatils-about-product');
+    const spanOne = document.querySelector(".span-one1");
+    const spanTwo = document.querySelector(".span-two1");
+    const detailsBox = document.getElementById('deatils-about-product1');
+    const prodcutdetails = document.querySelector('.h1-prodcut-details1');
 
     const isrotate = spanOne.style.rotate === '-45deg'
 
@@ -63,6 +70,8 @@ function Productpage() {
     spanTwo.style.border= '2px solid #684aeff5'
     detailsBox.style.height = '0px'
     detailsBox.style.overflow = 'none'
+    prodcutdetails.style.background = '#fff'
+
     }
     else{
       spanOne.style.rotate = '-45deg';
@@ -72,8 +81,76 @@ function Productpage() {
     spanTwo.style.border= '2px solid #ef584a'
     detailsBox.style.height = '100%'
     detailsBox.style.overflow = 'flex'
+    prodcutdetails.style.background = '#56565610'
     }    
   }
+
+
+  const hideDiv2 = () => {
+    const spanOne = document.querySelector(".span-one2");
+    const spanTwo = document.querySelector(".span-two2");
+    const detailsBox = document.getElementById('deatils-about-product2');
+    const prodcutdetails = document.querySelector('.h1-prodcut-details2');
+
+    const isrotate = spanOne.style.rotate === '-45deg'
+
+    if(isrotate){
+      spanOne.style.rotate = '0deg';
+      spanTwo.style.rotate = '-90deg';
+      spanOne.style.transform = 'translate(128%,1%)';
+    spanOne.style.border= '2px solid #684aeff5'
+    spanTwo.style.border= '2px solid #684aeff5'
+    detailsBox.style.height = '0px'
+    detailsBox.style.overflow = 'none'
+    prodcutdetails.style.background = '#fff'
+
+    }
+    else{
+      spanOne.style.rotate = '-45deg';
+    spanTwo.style.rotate = '45deg';
+    spanOne.style.transform = 'translate(40%,10%)';
+    spanOne.style.border= '2px solid #ef584a'
+    spanTwo.style.border= '2px solid #ef584a'
+    detailsBox.style.height = '100%'
+    detailsBox.style.overflow = 'flex'
+    prodcutdetails.style.background = '#56565610'
+    }    
+  }
+
+  const hideDiv3 = () => {
+    const spanOne = document.querySelector(".span-one3");
+    const spanTwo = document.querySelector(".span-two3");
+    const detailsBox = document.getElementById('deatils-about-product3');
+    const prodcutdetails = document.querySelector('.h1-prodcut-details3');
+
+    const isrotate = spanOne.style.rotate === '-45deg'
+
+    if(isrotate){
+      spanOne.style.rotate = '0deg';
+      spanTwo.style.rotate = '-90deg';
+      spanOne.style.transform = 'translate(128%,1%)';
+    spanOne.style.border= '2px solid #684aeff5'
+    spanTwo.style.border= '2px solid #684aeff5'
+    detailsBox.style.height = '0px'
+    detailsBox.style.overflow = 'none'
+    prodcutdetails.style.background = '#fff'
+
+    }
+    else{
+      spanOne.style.rotate = '-45deg';
+    spanTwo.style.rotate = '45deg';
+    spanOne.style.transform = 'translate(40%,10%)';
+    spanOne.style.border= '2px solid #ef584a'
+    spanTwo.style.border= '2px solid #ef584a'
+    detailsBox.style.height = '100%'
+    detailsBox.style.overflow = 'flex'
+    prodcutdetails.style.background = '#56565610'
+    }    
+  }
+
+
+ 
+  
 
   
 
@@ -132,15 +209,15 @@ function Productpage() {
                 </ul>
               </div>
           </div>
-          <div className="prodcut-details">
-            <div className="h1-prodcut-details">
+          <div className="prodcut-details1">
+            <div className="h1-prodcut-details1">
               <h2>Item Specifics</h2>
-              <div className="faplus" onClick={hideDiv1}>
-                <span className='span-one'></span>
-                <span className='span-two'></span>
+              <div className="faplus1" onClick={hideDiv1}>
+                <span className='span-one1'></span>
+                <span className='span-two1'></span>
               </div> 
             </div>
-            <div className="deatils-about-product" id='deatils-about-product'>
+            <div className="deatils-about-product1" id='deatils-about-product1'>
                 <ul>
                   <li>Item Type: Phone Cases</li>
                   <li>Material: TPU</li>
@@ -152,6 +229,59 @@ function Productpage() {
                 </ul>
               </div>
           </div>
+          <div className="prodcut-details2">
+            <div className="h1-prodcut-details2">
+              <h2>Shipping & Payments</h2>
+              <div className="faplus2" onClick={hideDiv2}>
+                <span className='span-one2'></span>
+                <span className='span-two2'></span>
+              </div> 
+            </div>
+            <div className="deatils-about-product2" id='deatils-about-product2'>
+                <h6>Shipping and delivery</h6>
+                <p>
+We are proud to offer international shipping services that currently operate in over 200 countries and islands worldwide. Nothing means more to us than bringing our customers great value and service. We will continue to grow to meet the needs of all our customers, delivering a service beyond all expectation anywhere in the world.
+                </p>
+                <h6>How do you ship packages?</h6>
+                <p>Packages from our warehouse in China will be shipped by ePacket or EMS depending on the weight and size of the product. Packages shipped from our US warehouse are shipped through USPS.</p>
+                <h6>Do you ship worldwide?</h6>
+                <p>Yes. We provide free shipping to over 200 countries around the world. However, there are some locations we are unable to ship to. If you happen to be located in one of those countries we will contact you.</p>
+                <h6>What about customs?</h6>
+                <p>We are not responsible for any custom fees once the items have shipped. By purchasing our products, you consent that one or more packages may be shipped to you and may get custom fees when they arrive to your country.</p>
+              </div>
+          </div>
+          <div className="prodcut-details3" id='paragraph11'>
+            <div className="h1-prodcut-details3">
+              <div className='reviews-box'>
+              <h2>Customers Reviews </h2>
+              <div className="start-cutomer-reviews">
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <p >8 review</p>
+              
+              </div>
+              </div>
+              <div className="faplus3" onClick={hideDiv3}>
+                <span className='span-one3'></span>
+                <span className='span-two3'></span>
+              </div> 
+            </div>
+            <div className="deatils-about-product3" id='deatils-about-product3'>
+                <ul>
+                  <li>Item Type: Phone Cases</li>
+                  <li>Material: TPU</li>
+                  <li>Compatibility: iPhone 6, 6 Plus, 6S, 6S Plus, 7, 7 Plus, 8, 8 Plus, X, XR, XS, XS Max</li>
+                </ul>
+                <p>Package Includes:</p>
+                <ul>
+                  <li>1 x Phone Case</li>
+                </ul>
+              </div>
+          </div>
+          
          </div>
           <div className="right-box-product">
           <div className="img-addcart">
@@ -164,7 +294,7 @@ function Productpage() {
               <img src={star} alt="" />
               <img src={star} alt="" />
               </div>
-              <p>8 review</p>
+              <p >8 reviews</p>
             </div>
             <h2 className='each-product-price'>$12.00 – $15.00</h2>
             <p className='free-shipping'>Free Shipping & Returns</p>

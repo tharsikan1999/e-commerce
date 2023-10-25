@@ -503,6 +503,7 @@
     margin: 0 10px;
     cursor: pointer;
     font-size: 15px;
+    
 
 }
 .review-each-product .img-start img {
@@ -691,14 +692,13 @@
 
 
 .left-box-product .prodcut-details {
-    margin: 30px 0;
-    border-top: 1px solid #565656;
+    margin: 30px 0 10px 0;
     
 }
 
 .faplus {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -751,4 +751,241 @@
     font-weight: 550;
     color: #414142;
 
+}
+
+
+.faplus1 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.prodcut-details1 {
+    border-top: 1px solid #565656ae;
+
+}
+
+.prodcut-details2 {
+    border-top: 1px solid #565656ae;
+
+}
+.prodcut-details3 {
+    border-top: 1px solid #565656ae;
+
+}
+.prodcut-details4 {
+    border-top: 1px solid #565656ae;
+
+    border-bottom: 1px solid #565656ae;
+
+}
+
+.h1-prodcut-details1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 80px;
+    color: #565656;
+    
+
+}
+
+.span-one1 {
+    border: 2px solid #684aeff5;
+    transform: translate(38%,1%);
+    transition: all 0.7s;
+}
+
+.span-two1 {
+    border: 2px solid #684aeff5;
+    rotate: 90deg;
+    transform: translate(10%,5%);
+    transition: all 0.7s;
+
+}
+
+.deatils-about-product1 {
+    
+    height: 0px;
+    overflow: hidden;
+
+   
+
+}
+.deatils-about-product1 ul {
+    margin: 30px 0 20px 50px;
+}
+
+.deatils-about-product1 ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #414142;
+}
+
+.deatils-about-product1 p {
+    margin: 30px 0 20px 22px;
+    font-weight: 550;
+    color: #414142;
+
+}
+
+
+.faplus2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.h1-prodcut-details2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 80px;
+    color: #565656;
+
+}
+
+.span-one2 {
+    border: 2px solid #684aeff5;
+    transform: translate(38%,1%);
+    transition: all 0.7s;
+}
+
+.span-two2 {
+    border: 2px solid #684aeff5;
+    rotate: 90deg;
+    transform: translate(10%,5%);
+    transition: all 0.7s;
+
+}
+
+.deatils-about-product2 {
+    
+    height: 0px;
+    overflow: hidden;
+   
+
+}
+.deatils-about-product2 ul {
+    margin: 30px 0 20px 50px;
+}
+
+.deatils-about-product2 ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #414142;
+}
+
+.deatils-about-product2 p {
+    margin: 30px 0 20px 22px;
+    font-weight: 550;
+    color: #414142;
+
+}
+
+.faplus3 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.h1-prodcut-details3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 80px;
+    color: #565656;
+
+}
+
+.span-one3 {
+    border: 2px solid #684aeff5;
+    transform: translate(38%,1%);
+    transition: all 0.7s;
+}
+
+.span-two3 {
+    border: 2px solid #684aeff5;
+    rotate: 90deg;
+    transform: translate(10%,5%);
+    transition: all 0.7s;
+
+}
+
+.deatils-about-product3 {
+    
+    height: 0px;
+    overflow: hidden;
+   
+
+}
+.deatils-about-product3 ul {
+    margin: 30px 0 20px 50px;
+}
+
+.deatils-about-product3 ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #414142;
+}
+
+.deatils-about-product3 p {
+    margin: 30px 0 20px 22px;
+    font-weight: 550;
+    color: #414142;
+
+}
+
+
+.prodcut-details h2,.prodcut-details1 h2,.prodcut-details2 h2,.prodcut-details3 h2 {
+    font-size: 21px;
+}
+
+.deatils-about-product2 h6 {
+    font-size: 19px;
+    margin: 20px 0 0 20px;
+    font-weight: 400;
+    color: #444;
+}
+
+
+.deatils-about-product2 p {
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+    font-family: inherit;
+    margin: 15px 0 10px 20px;
+}
+
+.start-cutomer-reviews {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.start-cutomer-reviews img {
+    height: 20px;
+    margin: 2px  0 0 5px;
+
+}
+
+.start-cutomer-reviews p {
+    margin: 3px 0 0 13px;
+    font-weight: 600;
+}
+
+.reviews-box {
+    display: flex;
 }
