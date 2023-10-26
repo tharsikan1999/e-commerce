@@ -16,13 +16,19 @@ function AdminBody() {
        DropDownBar.style.display = "none"
   };
   
-  const { fullInputs, imglinks } = useContext(sendData);
+  const { fullInputs, imglinks,colorImgUrlDatas } = useContext(sendData);
 
-  const [imag , setImag] = useState([])
+  const [imag , setImag] = useState([]);
+
+  const [colorimag , setcolorimag] = useState([])
 
     const [data , setData] = useState([
         
     ])
+
+    useEffect(()=>{
+      setcolorimag(colorImgUrlDatas)
+    },[colorImgUrlDatas])
 
     useEffect (()=>{
         setData(fullInputs)
@@ -58,9 +64,10 @@ function AdminBody() {
            <tr>
                 <th>Product no</th>
                 <th>Product name</th>
-                <th>Product Price</th>
-                <th>Add date</th>
+                <th>Product Price</th>       
                 <th>Product quantity</th>
+                <th>product size</th>
+                <th>Product color</th>
                 <th>Product image</th>
             </tr>
            </thead>
@@ -72,7 +79,15 @@ function AdminBody() {
               <td>{row.productName}</td>
               <td>{row.productPrice}</td>
               <td>{row.productQuantity}</td>
-              <td>{row.AddDate}</td>
+              <td>{row.productSize}</td>
+              {colorimag.map((colorimg,colorindex)=>{
+                if(colorindex === index){
+                  return(<td key={colorindex} id='colortabeleye'><img id='colorproductIMG' src={colorimg} alt="" /></td>)
+                }
+                else{
+                  return null
+                }
+              })}
               {imag.map((imge,imgindex)=>{
                 if(imgindex === index){
                  return( <td key={imgindex} id='tabeleye'><img id='productIMG' src={imge} alt="" /></td>)

@@ -302,6 +302,7 @@ We are proud to offer international shipping services that currently operate in 
               <img src={clock} alt="" />
               <p> Selling fast: get yours before it’s gone!</p>
             </div>
+            <p className='Material'>Color</p>
             <div className='matirial-img-box'>
               <span><img src={belt} alt="" /></span>
               <span><img src={clothesone} alt="" /></span>
@@ -315,7 +316,14 @@ We are proud to offer international shipping services that currently operate in 
               <span><img src={three} alt="" /></span>
 
             </div>
-              <p className='Material'>Material</p>
+              <p className='Material'>Size</p>
+              <div className="product-size-select">
+                <span>Extra Small</span>
+                <span>Small</span>
+                <span>Large</span>
+                <span>Extra Large</span>
+              </div>
+
 
               
             <h2 className='each-product-price'>$13.83</h2>

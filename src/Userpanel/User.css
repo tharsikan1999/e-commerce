@@ -989,3 +989,22 @@
 .reviews-box {
     display: flex;
 }
+
+.product-size-select {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 10px 0;
+}
+
+.product-size-select span {
+    margin: 15px 15px 0 0;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #93929212;
+}
+
+.product-size-select span:hover{
+    background-color: #4444442f;
+    cursor: pointer;
+}
