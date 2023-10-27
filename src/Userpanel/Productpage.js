@@ -12,7 +12,23 @@ import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import plane from './images/plane.png';
 import returnimg from './images/return.png'
 import safe from './images/safe.png'
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import clothesthree from './images/products/clothes-3.jpg'
+import clothesfour from './images/products/clothes-4.jpg'
+import clothesfourone from './images/products/imgone.jpg'
+import clothesfourtwo from './images/products/jacket-1.jpg'
+import clothesfourthree from './images/products/jacket-2.jpg'
+import clothesfourfour from './images/products/jewellery-1.jpg'
+import clothesfourfive from './images/products/party-wear-1.jpg'
+import clothesfoursix from './images/products/perfume.jpg'
+import clothesfourseven from './images/products/shirt-1.jpg'
+import clothesfoureight from './images/products/shoe-1.jpg'
+import clothesfournine from './images/products/shorts-2.jpg'
+import clothesfourten from './images/products/party-wear-2.jpg'
+import clothesfoureleven from './images/products/watch-2.jpg'
+import clothesfourtwel from './images/products/jewellery-3.jpg'
+import four from './images/products/4.jpg'
+
 
 
 
@@ -149,6 +165,147 @@ function Productpage() {
   }
 
 
+  const itemsData = [{
+    productId : "7H7CnGo7pDki8oQWll",
+    ProductName: "Exclusive Women Fashion High Dress ",
+    productIMG: clothesone, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "7R0q1si0kSqUPU87P9",
+    ProductName: "Exclusive Women Fashion High  ",
+    productIMG: clothestwo, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "5t3hF0GP5kUH8T5zpU",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: two, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "2hYg28OM3dF6dQQaC7",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: three, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "027deP69nXIsCGZH6M",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesthree, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "dD8e20VRcwZjdoara0",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfour, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "7j00IPXPwxFmqws6Xm",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourone      , 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "TJ5t7o5KNIPL28Z3BG",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourtwo, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "5Q2m88jQDfIW6rO8FJ",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourthree, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "56rA0Db3IVZcDQflwH",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourfour, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "c0aV99Sp9Fs6MiIYRq",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourfive, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "67xL3FNHGRd7if7n8j",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfoursix, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},
+{ 
+    productId : "Q510yPhlD4SO7R9cmL",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: belt, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "67xL3FNHGRd7if7n8j",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourseven, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "s5A08o6i52i5AzLZZ5",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfoureight  , 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "tLk76z9RXARV5P5E0D",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfournine, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "tLk76z9RXARV5P5E0D",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourten, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "6Zz79JGN9X7GVt6BZo",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfoureleven, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "7H7CnGo7omki8oQWll",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: clothesfourtwel, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+},{ 
+    productId : "7H7CnGo7pDkiooQWll",
+    ProductName: "Exclusive Women Fashion High Dress",
+    productIMG: four, 
+    productPrice: '$10.00 - $15.00',
+    productBought: "1434",
+}];
+
+
+
+ 
+  const {producetId} = useParams()
+
+
+  const productData = itemsData.find((data)=>{
+   return data.productId === producetId
+  })
+
+  
+
+
+
+
+
+
+
  
   
 
@@ -178,7 +335,7 @@ function Productpage() {
             </div>
           </div>
           <div className="main-img">
-            <img src={two} alt="" />
+            <img src={productData.productIMG} alt="" />
           </div>
           
           </div>
@@ -285,7 +442,7 @@ We are proud to offer international shipping services that currently operate in 
          </div>
           <div className="right-box-product">
           <div className="img-addcart">
-            <h5 className='product-title'>Cute Fluffy Leopard Print Phone Case For iPhone</h5>
+            <h5 className='product-title'>{productData.ProductName}</h5>
             <div className="review-each-product">
               <div className="img-start">
               <img src={star} alt="" />
@@ -296,7 +453,7 @@ We are proud to offer international shipping services that currently operate in 
               </div>
               <p >8 reviews</p>
             </div>
-            <h2 className='each-product-price'>$12.00 – $15.00</h2>
+            <h2 className='each-product-price'>{productData.productPrice}</h2>
             <p className='free-shipping'>Free Shipping & Returns</p>
             <div className="selling-fast">
               <img src={clock} alt="" />
@@ -304,16 +461,15 @@ We are proud to offer international shipping services that currently operate in 
             </div>
             <p className='Material'>Color</p>
             <div className='matirial-img-box'>
-              <span><img src={belt} alt="" /></span>
-              <span><img src={clothesone} alt="" /></span>
-              <span><img src={clothestwo} alt="" /></span>
-              <span><img src={two} alt="" /></span>
-              <span><img src={three} alt="" /></span>
-              <span><img src={belt} alt="" /></span>
-              <span><img src={clothesone} alt="" /></span>
-              <span><img src={clothestwo} alt="" /></span>
-              <span><img src={two} alt="" /></span>
-              <span><img src={three} alt="" /></span>
+              <span  style={{background:"red"}}></span>
+              <span  style={{background:"blue"}}></span>
+              <span  style={{background:"yellow"}}></span>
+              <span  style={{background:"green"}}></span>
+              <span  style={{background:"black"}}></span>
+              <span  style={{background:"gray"}}></span>
+              <span  style={{background:"purple"}}></span>
+              <span  style={{background:"rgb(0, 255, 242)"}}></span>
+
 
             </div>
               <p className='Material'>Size</p>

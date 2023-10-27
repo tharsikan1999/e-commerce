@@ -13,6 +13,7 @@ import Navbar from './Navbar'
 import Promition from './Promition'
 import Footer from '../Footer'
 import { useState } from 'react'
+import Productpage from './Productpage'
 
 
 
@@ -31,6 +32,7 @@ function AppUser() {
           <Route path='/Bestdeals' element={<Bestdeals />} />
           <Route path='/Featured'  element={<Featured />} />       
           <Route path='*' element={<Nopage />} /> 
+          <Route path='/products/:producetId' element={<Productpage/>}/>
           <Route path='/Adminpanel/Admin' element={ <Admin setShowNavbar={setShowNavbar}/>}/> 
       </Routes>
       {showNvaebar && <Promition/>}

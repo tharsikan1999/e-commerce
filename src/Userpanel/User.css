@@ -672,23 +672,26 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
-}
-
-.matirial-img-box img {
-    height: 60px;
-    border: 1px solid #82828423;
-    
+    width: 80%;
 }
 
 .matirial-img-box span {
-    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: 10px 7px;
 }
 
 .matirial-img-box span:hover {
     cursor: pointer;
-    outline : 1px solid #414142;
-    padding: 2px;
+    opacity: 1;
+    
 }
+
+
+
+
 
 
 .left-box-product .prodcut-details {
