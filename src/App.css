@@ -413,3 +413,20 @@
     scale: 1.2;
     transition: scale 0.5s;
 }
+
+
+#addproduct-span-6 {
+    margin-left: 27px;
+    font-weight: 600;
+}
+
+#productcolorselect {
+    margin:7px 0 10px 6px;
+    height: 30px;
+    width: 150px;
+    font-size: 16px;
+    padding: 0 6px;
+    cursor: pointer;
+    color: #464646;
+}
+

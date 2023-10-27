@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import belt from './images/products/belt.jpg';
 import clothesone from './images/products/clothes-1.jpg'
 import clothestwo from './images/products/clothes-2.jpg'
@@ -166,148 +166,160 @@ function Productpage() {
 
 
   const itemsData = [{
-    productId : "7H7CnGo7pDki8oQWll",
-    ProductName: "Exclusive Women Fashion High Dress ",
-    productIMG: clothesone, 
+    productId : "7H7CnGo7pDkiooQWll",
+    ProductName: "Exclusive Women Fashion High  ",
+    productIMG : [clothesone,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
-},{ 
+} ,{ 
     productId : "7R0q1si0kSqUPU87P9",
     ProductName: "Exclusive Women Fashion High  ",
-    productIMG: clothestwo, 
+    productIMG : [clothesfoureleven,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],   
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "5t3hF0GP5kUH8T5zpU",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: two, 
+    productIMG: [clothesfoureight,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],     
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "2hYg28OM3dF6dQQaC7",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: three, 
+    productIMG: [clothesfourtwel,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "027deP69nXIsCGZH6M",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesthree, 
+    productIMG: [clothesfourseven,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "dD8e20VRcwZjdoara0",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfour, 
+    productIMG: [clothesfoursix,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "7j00IPXPwxFmqws6Xm",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourone      , 
+    productIMG: [clothestwo,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "TJ5t7o5KNIPL28Z3BG",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourtwo, 
+    productIMG: [clothesfourfive,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "5Q2m88jQDfIW6rO8FJ",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourthree, 
+    productIMG: [clothesfourten,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "56rA0Db3IVZcDQflwH",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourfour, 
+    productIMG: [clothesfourthree,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "c0aV99Sp9Fs6MiIYRq",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourfive, 
+    productIMG: [clothesfournine,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "67xL3FNHGRd7if7n8j",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfoursix, 
+    productIMG: [belt,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },
 { 
     productId : "Q510yPhlD4SO7R9cmL",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: belt, 
+    productIMG: [clothesfourfour,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "67xL3FNHGRd7if7n8j",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourseven, 
+    productIMG: [clothesfourtwo,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "s5A08o6i52i5AzLZZ5",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfoureight  , 
+    productIMG: [four,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "tLk76z9RXARV5P5E0D",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfournine, 
+    productIMG: [clothesfour,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "tLk76z9RXARV5P5E0D",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourten, 
+    productIMG: [clothesthree,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "6Zz79JGN9X7GVt6BZo",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfoureleven, 
+    productIMG: [two,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "7H7CnGo7omki8oQWll",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: clothesfourtwel, 
+    productIMG: [clothesfourone,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
 },{ 
     productId : "7H7CnGo7pDkiooQWll",
     ProductName: "Exclusive Women Fashion High Dress",
-    productIMG: four, 
+    productIMG: [three,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
     productPrice: '$10.00 - $15.00',
     productBought: "1434",
-}];
+} ];
 
+
+const zoomInImg = () => {
+  const mainImg = document.querySelector('.main-img img');
+
+  mainImg.style.scale = "1.5";
+
+}
+
+const zoomOutImg = () => {
+  const mainImg = document.querySelector('.main-img img');
+
+  mainImg.style.scale = "1";
+}
 
 
  
   const {producetId} = useParams()
 
+  
+
+  
 
   const productData = itemsData.find((data)=>{
    return data.productId === producetId
   })
 
-  
+  const [mainimage ,setmainIMage] = useState(productData.productIMG[0])
 
+  const chnageImg = (image) => {
+    setmainIMage(image);
+  }
 
-
-
-
-
-
- 
-  
 
   
 
@@ -319,23 +331,23 @@ function Productpage() {
          <div className="sub-box-img-set">
           <div className="clone-img">
             <div className="clone-img-one">
-              <img src={belt} alt="" />
+              <img onClick={()=>chnageImg(productData.productIMG[5])} src={productData.productIMG[5]} alt="" />
             </div>
             <div className="clone-img-two">
-            <img src={clothesone} alt="" />
+            <img onClick={()=>chnageImg(productData.productIMG[4])} src={productData.productIMG[4]} alt="" />
             </div>
             <div className="clone-img-three">
-            <img src={clothestwo} alt="" />
+            <img onClick={()=>chnageImg(productData.productIMG[3])} src={productData.productIMG[3]} alt="" />
             </div>
             <div className="clone-img-four">
-            <img src={two} alt="" />
+            <img onClick={()=>chnageImg(productData.productIMG[2])} src={productData.productIMG[2]} alt="" />
             </div>
             <div className="clone-img-five">
-              <img src={three} alt="" />
+              <img onClick={()=>chnageImg(productData.productIMG[1])} src={productData.productIMG[1]} alt="" />
             </div>
           </div>
           <div className="main-img">
-            <img src={productData.productIMG} alt="" />
+            <img onMouseEnter={zoomInImg} onMouseLeave={zoomOutImg} src={mainimage} alt="" />
           </div>
           
           </div>

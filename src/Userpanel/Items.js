@@ -37,127 +37,127 @@ function Items() {
 
 
     const itemsData = [{
-        productId : "7H7CnGo7pDki8oQWll",
-        ProductName: "belt",
-        productIMG: clothesone, 
+        productId : "7H7CnGo7pDkiooQWll",
+        ProductName: "Exclusive Women Fashion High  ",
+        productIMG : [clothesone,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
-    },{ 
+    } ,{ 
         productId : "7R0q1si0kSqUPU87P9",
-        ProductName: "belt",
-        productIMG: clothestwo, 
+        ProductName: "Exclusive Women Fashion High  ",
+        productIMG : [clothesfoureleven,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],   
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "5t3hF0GP5kUH8T5zpU",
-        ProductName: "belt",
-        productIMG: two, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfoureight,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],     
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "2hYg28OM3dF6dQQaC7",
-        ProductName: "belt",
-        productIMG: three, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourtwel,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "027deP69nXIsCGZH6M",
-        ProductName: "belt",
-        productIMG: clothesthree, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourseven,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "dD8e20VRcwZjdoara0",
-        ProductName: "belt",
-        productIMG: clothesfour, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfoursix,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour],
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "7j00IPXPwxFmqws6Xm",
-        ProductName: "belt",
-        productIMG: clothesfourone      , 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothestwo,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "TJ5t7o5KNIPL28Z3BG",
-        ProductName: "belt",
-        productIMG: clothesfourtwo, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourfive,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "5Q2m88jQDfIW6rO8FJ",
-        ProductName: "belt",
-        productIMG: clothesfourthree, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourten,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "56rA0Db3IVZcDQflwH",
-        ProductName: "belt",
-        productIMG: clothesfourfour, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourthree,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "c0aV99Sp9Fs6MiIYRq",
-        ProductName: "belt",
-        productIMG: clothesfourfive, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfournine,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "67xL3FNHGRd7if7n8j",
-        ProductName: "belt",
-        productIMG: clothesfoursix, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [belt,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },
     { 
         productId : "Q510yPhlD4SO7R9cmL",
-        ProductName: "belt",
-        productIMG: belt, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourfour,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "67xL3FNHGRd7if7n8j",
-        ProductName: "belt",
-        productIMG: clothesfourseven, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourtwo,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "s5A08o6i52i5AzLZZ5",
-        ProductName: "belt",
-        productIMG: clothesfoureight  , 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [four,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "tLk76z9RXARV5P5E0D",
-        ProductName: "belt",
-        productIMG: clothesfournine, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfour,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "tLk76z9RXARV5P5E0D",
-        ProductName: "belt",
-        productIMG: clothesfourten, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesthree,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "6Zz79JGN9X7GVt6BZo",
-        ProductName: "belt",
-        productIMG: clothesfoureleven, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [two,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "7H7CnGo7omki8oQWll",
-        ProductName: "belt",
-        productIMG: clothesfourtwel, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [clothesfourone,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
     },{ 
         productId : "7H7CnGo7pDkiooQWll",
-        ProductName: "belt",
-        productIMG: four, 
+        ProductName: "Exclusive Women Fashion High Dress",
+        productIMG: [three,clothesfourtwel,clothestwo,clothesfourten,clothesfournine,clothesfour], 
         productPrice: '$10.00 - $15.00',
         productBought: "1434",
-    }];
+    } ];
 
     const [hoveredItem, setHoveredItem] = useState(null);
 
@@ -182,6 +182,8 @@ function Items() {
         setHeratItem(false)
     }
 
+   
+
 
 
   return (
@@ -198,7 +200,7 @@ function Items() {
              <FontAwesomeIcon id='faHeart' style={{scale : heartItem === true ? '1.3' :'1'}} icon={faHeart}/>
          </div>
          <Link to={`/products/${details.productId}`}>
-         <img id='product-img' src={details.productIMG} alt="" />
+         <img id='product-img' src={details.productIMG[0]} alt="" />
          </Link>
          <h5>{details.productPrice}</h5>
          <div className="sub-box-tem">

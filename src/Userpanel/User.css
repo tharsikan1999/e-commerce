@@ -462,9 +462,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
 } 
 .box-one-img-addcart .main-img img {
     height: 550px;
+    transition: all 2s;
+    
 }
 
 .clone-img-one img,.clone-img-two img,.clone-img-three img,.clone-img-four img,.clone-img-five img {
