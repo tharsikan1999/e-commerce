@@ -1,14 +1,13 @@
 import React from 'react'
 import Login from '../Login'
 import Signup from '../Signup'
-import Productpage from './Productpage'
-
+import NewItems from './Newitem'
 
 function Allproducts() {
   return (
     <div>
      
-     <Productpage/>
+     <NewItems/>
       <Login/>
       <Signup/>
       
